@@ -1,0 +1,3 @@
+	Excel转json格式
+	粗糙的利用Python读取excel文件来强行转换成json格式
+	去除掉文件中含有的非法json字符
