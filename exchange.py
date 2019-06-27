@@ -1,11 +1,11 @@
 import xlrd
 file = open("save1.json","a+",encoding="utf-8")
-data = xlrd.open_workbook("数据网站.xls")
-table = data.sheet_by_name(u'Sheet1')
+data = xlrd.open_workbook("test.xlsx")#excel文件名
+table = data.sheet_by_name(u'Sheet1')#具体看excel中的SHEET名字
 nclos = len(table.row_values(0))
 nrows = table.nrows
 title = list()
-titles = ["Website","Link","Data","Amount","Update","type","field"]
+titles = ["来源库","题名","作者","单位","文献来源","关键词","摘要","发表时间","被引量","下载量"]
 #itles= ["source_Libiary","title","author","unit","source_literature","key_words","summery","issuing_time","Cited","download"]
 # for item in table.row_values(1):
 #     item = item.replace("\n","")
